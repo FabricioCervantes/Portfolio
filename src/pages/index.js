@@ -8,6 +8,7 @@ import {
   BsLinkedin,
   BsGithub,
 } from "react-icons/bs";
+import ProfilePic from "/public/images/profile.jpeg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,10 +39,10 @@ export default function Home() {
             </h1>
             <p className="text-xl mt-2">Full Stack Developer</p>
             <p className="mt-5 text-center">
-              I'm a web-loving software engineering student with a passion for
-              creating dynamic and engaging online experiences.
+              I&apos;m a web-loving software engineering student with a passion
+              for creating dynamic and engaging online experiences.
             </p>
-            <div className="flex text-5xl gap-5 mt-5">
+            <div className="flex text-5xl gap-20 mt-10">
               <a href="www.twitter.com">
                 <BsTwitter />
               </a>
@@ -51,6 +52,17 @@ export default function Home() {
               <a href="">
                 <BsLinkedin />
               </a>
+            </div>
+            <div class="flex mt-10 flex-wrap justify-center">
+              <div class="w-10/12 sm:w-4/12 px-4">
+                <Image
+                  src={ProfilePic}
+                  alt="profile pic"
+                  width={800}
+                  height={800}
+                  className="shadow-lg rounded-full max-w-full h-auto align-middle border-none"
+                ></Image>
+              </div>
             </div>
           </div>
         </section>
